@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos: Inicio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body onload="imprimirPersonas()">
+    <header>
+        <h1>Areglos con JavaScript</h1>
+        <hr>
+    </header>
+    <div class="container">
+        <h4>Proyecto Final</h4>
+        <ul><li><h6>Programadores</h6></li></ul>
+        <table id="tblPersonas" class="table">
+            
+        </table>
+        <br>
+            <h6>Agregar Programadores al proyecto</h6>                
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" name="txtNombre" id="txtNombre">
+        <hr>
+        <div class="mb-3">
+            <button  onclick="pushPersonas()" type="button" class="btn btn-primary btn-sm">Agregar</button>
+            <button  onclick="popPersonas()" type="button" class="btn btn-secondary btn-sm">Eliminar Final</button>
+            <button  onclick="shiftPersonas()" type="button" class="btn btn-primary btn-sm">Eliminar Inicio</button>
+            
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                  <th id="tblNuevo" scope="row"></th>
+                </tr>
+            </tbody>
+        </table>
+        <div lass="mb-3">           
+            <label for="txtInicio">Indice inicial: </label>
+            <input type="number" value="0" min="1" name="txtInicio" id="txtInicio">
+            <label for="txtFinal">Indice final: </label>
+            <input type="number" value="1" min="1" name="txtFinal" id="txtFinal">   
+            <button  onclick="slicePersonas()" type="button" class="btn btn-secondary btn-sm">Filtar segun Indice</button>                    
+        </div>
+    </div>
+
+    <footer>
+        <script src="js/index_script.js"></script>
+    </footer>
+</body>
+</html>
